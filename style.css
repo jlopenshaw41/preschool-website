@@ -8,7 +8,13 @@ font-family: 'Open Sans', sans-serif;
 */
 
 
-ul {
+nav {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.navbar {
   display: flex;
   justify-content: space-around;
   align-content: center;
@@ -20,11 +26,17 @@ ul {
   font-size: 25px;
   font-weight: bold;
   background-color: rgba(255, 255, 255, 0.85);
+  height: 40px;
 }
 
-a {
+.navbar a {
 	text-decoration: none;
   	color: black;
+  	position: absolute;
+ }
+
+.navbar a:hover {
+	font-size: 27px;
 }
 
 .header {
@@ -37,7 +49,7 @@ a {
 	background-position: center;
 	background-size: cover;
 	padding: 50px;
-	margin-top: 20px;
+	margin-top: 40px;
 	height: 350px;
 }
 
@@ -112,6 +124,8 @@ img {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	width: 70%;
+	margin: 0 auto;
 }
 
 .about h1 {
